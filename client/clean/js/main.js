@@ -1,6 +1,7 @@
 function readFile(e) {
   e.preventDefault();
   document.getElementById("loading").hidden = false;
+  document.getElementById("downloadbtns").hidden = true;
   var f = e.target[1].files[0];
   if (f) {
     var fr = new FileReader();
@@ -25,6 +26,8 @@ function readFile(e) {
           firstBtn.href = 'data:attachment/text,' + encodeURI(results);
           firstBtn.target = '_blank';
           firstBtn.download = 'myFile.txt';
+
+          document.getElementById("downloadbtns").hidden = false;
         }
       }
     }
