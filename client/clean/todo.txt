@@ -1,0 +1,3 @@
+try - instead of 2 download buttons, show grid of data, should be copy/pastable
+do - figure out how to run node js application on AWS
+do - figure out how to compile matlab code to executable

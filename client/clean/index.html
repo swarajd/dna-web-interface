@@ -6,6 +6,7 @@
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="css/tacit.min.css" charset="utf-8">
     <link rel="stylesheet" href="css/style.css" title="no title" charset="utf-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/superagent/1.2.0/superagent.min.js" charset="utf-8"></script>
   </head>
   <body>
     <section class="appcontainer">
@@ -13,16 +14,16 @@
         <h1 class="title">DNA app</h1>
         <form action="" method="" class="dna-form" id="dna-form">
           <textarea name="dnaseq" id="dnaseq" cols="40" rows="3" placeholder="ATCGCGGATA"></textarea>
-          <input type="file" name="fastafile" id="fastafile">
+          <!-- <input type="file" name="fastafile" id="fastafile"> -->
+          <progress value="22" max="100"></progress>
           <button type="submit">Submit</button>
           <div id="loading">Loading...</div>
         </form>
 
         <div id="downloadbtns">
           <button type="submit">
-            <a href="#" id="firstData">first download</a>
+            <a href="#" id="firstData">download data</a>
           </button>
-          <button type="submit"> second download </button>
         </div>
       </article>
     </section>

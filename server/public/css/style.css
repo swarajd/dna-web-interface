@@ -1,0 +1,48 @@
+.title {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.subtitle {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.acronym {
+  font-weight: bold;
+  font-size: 1em;
+}
+
+a {
+  color: white;
+}
+
+#loading-bar {
+  width: 100%;
+}
+
+progress::-webkit-progress-bar {
+  background: #EEE;
+}
+
+progress::-webkit-progress-value  {
+  background-color: #3498db;
+}
+
+.horiz-center {
+  text-align: center;
+}
+
+caption {
+  padding-left:
+}
+
+form {
+  text-align: center;
+}
+
+textarea {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

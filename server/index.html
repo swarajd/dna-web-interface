@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+  <head>
+  <meta charset="utf-8">
+    <title>CRISTINES</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/tacit.min.css" charset="utf-8">
+    <link rel="stylesheet" href="css/grid.css" charset="utf-8">
+    <link rel="stylesheet" href="css/style.css" title="no title" charset="utf-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/superagent/1.2.0/superagent.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <section class="appcontainer">
+      <article>
+        <h1 class="title">CRISTINES</h1>
+        <h2 class="subtitle"><span class="acronym">CRIS</span>pr - cas9 <span class="acronym">T</span>ranscriptional <span class="acronym">IN</span>active</h2>
+        <form action="" method="" class="dna-form" id="dna-form">
+          <textarea name="dnaseq" id="dnaseq" cols="40" rows="3" placeholder="ATCGCGGATA"></textarea>
+          <!-- <input type="file" name="fastafile" id="fastafile"> -->
+          <button type="submit">Submit</button>
+          <!-- <div id="loading">Loading...</div> -->
+          <progress value="0" max="73" id="loading-bar"></progress><br>
+        </form>
+
+        <div id="downloadbtns">
+          <div class="grid">
+            <div class="grid__col grid__col--1-of-2">
+              <table>
+                <caption><h2>Inactivated</h2></caption>
+                <thead>
+                  <tr>
+                    <th>gRNA</th>
+                    <th>FC</th>
+                  </tr>
+                </thead>
+                <tbody id="inactivated">
+
+                </tbody>
+              </table>
+            </div>
+            <div class="grid__col grid__col--1-of-2">
+              <table>
+                <caption><h2>Elevated</h2></caption>
+                <thead>
+                  <tr>
+                    <th>gRNA</th>
+                    <th>FC</th>
+                  </tr>
+                </thead>
+                <tbody id="elevated">
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="horiz-center">
+            <button type="submit">
+              <a href="#" id="firstData">download data</a>
+            </button>
+          </div>
+        </div>
+      </article>
+    </section>
+  </body>
+  <script src="js/main.js" charset="utf-8"></script>
+</html>

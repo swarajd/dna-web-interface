@@ -6,3 +6,7 @@
 a {
   color: white;
 }
+
+#loading-bar {
+  width: 100%;
+}
